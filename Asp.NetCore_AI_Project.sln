@@ -5,6 +5,8 @@ VisualStudioVersion = 17.13.35818.85
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Asp.NetCore_AI_Project_01_APIDemo", "Asp.NetCore_AI_Project_01_APIDemo\Asp.NetCore_AI_Project_01_APIDemo.csproj", "{463F82E4-5FBB-4DC3-9A95-AB947A55DC9B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Asp.NetCore_AI_Project_02_APIConsumeUI", "Asp.NetCore_AI_Project_02_APIConsumeUI\Asp.NetCore_AI_Project_02_APIConsumeUI.csproj", "{49E02B02-1850-4BF0-A6F9-96A7B99BCE82}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{463F82E4-5FBB-4DC3-9A95-AB947A55DC9B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{463F82E4-5FBB-4DC3-9A95-AB947A55DC9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{463F82E4-5FBB-4DC3-9A95-AB947A55DC9B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{49E02B02-1850-4BF0-A6F9-96A7B99BCE82}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{49E02B02-1850-4BF0-A6F9-96A7B99BCE82}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{49E02B02-1850-4BF0-A6F9-96A7B99BCE82}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{49E02B02-1850-4BF0-A6F9-96A7B99BCE82}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
