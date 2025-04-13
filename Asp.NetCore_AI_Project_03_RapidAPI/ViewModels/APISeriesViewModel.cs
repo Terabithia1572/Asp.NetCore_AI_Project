@@ -1,0 +1,19 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Asp.NetCore_AI_Project_03_RapidAPI.ViewModels
+{
+    public class APISeriesViewModel
+    {
+        public int rank { get; set; }
+        public string title { get; set; }
+        public float rating { get; set; }
+        public string year { get; set; }
+     
+    }
+
+
+}
