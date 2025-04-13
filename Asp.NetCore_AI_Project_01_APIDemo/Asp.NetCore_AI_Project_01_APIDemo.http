@@ -1,0 +1,6 @@
+@Asp.NetCore_AI_Project_01_APIDemo_HostAddress = http://localhost:5115
+
+GET {{Asp.NetCore_AI_Project_01_APIDemo_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

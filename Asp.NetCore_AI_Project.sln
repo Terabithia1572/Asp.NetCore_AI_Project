@@ -1,9 +1,21 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.13.35818.85 d17.13
+VisualStudioVersion = 17.13.35818.85
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Asp.NetCore_AI_Project_01_APIDemo", "Asp.NetCore_AI_Project_01_APIDemo\Asp.NetCore_AI_Project_01_APIDemo.csproj", "{463F82E4-5FBB-4DC3-9A95-AB947A55DC9B}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{463F82E4-5FBB-4DC3-9A95-AB947A55DC9B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{463F82E4-5FBB-4DC3-9A95-AB947A55DC9B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{463F82E4-5FBB-4DC3-9A95-AB947A55DC9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{463F82E4-5FBB-4DC3-9A95-AB947A55DC9B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
