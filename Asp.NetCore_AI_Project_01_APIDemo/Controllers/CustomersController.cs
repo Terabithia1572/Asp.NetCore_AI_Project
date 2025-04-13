@@ -40,5 +40,18 @@ namespace Asp.NetCore_AI_Project_01_APIDemo.Controllers
             _apiContext.SaveChanges();
             return Ok("Müşteri Başarıyla Silindi..");
         }
+        [HttpGet("GetCustomer")]
+        public IActionResult GetCustomer(int id)
+        {
+            var values = _apiContext.Customers.Find(id);
+            return Ok(values);
+        }
+        [HttpPut]
+        public IActionResult UpdateCustomer(Customer customer)
+        {
+            _apiContext.Update(customer);
+            _apiContext.SaveChanges();
+            return Ok("Müşteri Başarıyla Güncellendi..");
+        } 
     }
 }
