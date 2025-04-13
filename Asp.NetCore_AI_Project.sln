@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Asp.NetCore_AI_Project_02_A
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Asp.NetCore_AI_Project_03_RapidAPI", "Asp.NetCore_AI_Project_03_RapidAPI\Asp.NetCore_AI_Project_03_RapidAPI.csproj", "{D3813576-F1FB-452C-A46B-BC8971E2CF83}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Asp.NetCore_AI_Project_04_OpenAIChat", "Asp.NetCore_AI_Project_04_OpenAIChat\Asp.NetCore_AI_Project_04_OpenAIChat.csproj", "{E1793B65-ADA7-4D7C-B2D0-A79A6BAFB4E2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{D3813576-F1FB-452C-A46B-BC8971E2CF83}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D3813576-F1FB-452C-A46B-BC8971E2CF83}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D3813576-F1FB-452C-A46B-BC8971E2CF83}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E1793B65-ADA7-4D7C-B2D0-A79A6BAFB4E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E1793B65-ADA7-4D7C-B2D0-A79A6BAFB4E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E1793B65-ADA7-4D7C-B2D0-A79A6BAFB4E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E1793B65-ADA7-4D7C-B2D0-A79A6BAFB4E2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

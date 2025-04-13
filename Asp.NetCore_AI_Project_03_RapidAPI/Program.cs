@@ -21,7 +21,7 @@ using (var response = await client.SendAsync(request))
     apiSeriesViewModel=JsonConvert.DeserializeObject<List<APISeriesViewModel>>(body); //İçeriği deserialize et
     foreach (var series in apiSeriesViewModel)
     {
-        Console.WriteLine(series.rank+"-"+series.title+" -Film Puanı"+series.rating+" -Yapım Yılı: "+series.year);
+        Console.WriteLine(series.rank+"-"+series.title+" Film Puanı: "+series.rating+" -Yapım Yılı: "+series.year);
     }
     Console.WriteLine();
 }
