@@ -1,6 +1,7 @@
 ﻿using Asp.NetCore_AI_Project_02_APIConsumeUI.DTOs;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
+using System.Text;
 
 namespace Asp.NetCore_AI_Project_02_APIConsumeUI.Controllers
 {
@@ -33,6 +34,21 @@ namespace Asp.NetCore_AI_Project_02_APIConsumeUI.Controllers
         [HttpGet]
         public async Task<IActionResult> CreateCustomer()
         {
+
+            return View();
+        }
+        [HttpPost]
+        public async Task<IActionResult> CreateCustomer(CreateCustomerDTO createCustomerDTO)
+        {
+            var client = _httpClientFactory.CreateClient();
+            var jsonData = JsonConvert.SerializeObject(createCustomerDTO);
+            //burada gelen cevabı serialize ediyoruz yani C# nesnesinden JSON'a çeviriyoruz
+            StringContent stringContent = new StringContent(jsonData,Encoding.UTF8,"application/json");
+            var responseMessage = await client.PostAsync("https://localhost:7254/api/Customers",stringContent); //burada API'ye veri gönderiyoruz
+            if(responseMessage.IsSuccessStatusCode)
+            {
+                return RedirectToAction("CustomerList");
+            }
             return View();
         }
     }
