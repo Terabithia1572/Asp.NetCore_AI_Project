@@ -66,12 +66,25 @@ namespace Asp.NetCore_AI_Project_02_APIConsumeUI.Controllers
         public async Task<IActionResult> UpdateCustomer(int id)
         {
             var client=_httpClientFactory.CreateClient();
-            var responseMessage=await client.GetAsync("https://localhost:7254/api/Customers?id=" + id);
+            var responseMessage=await client.GetAsync("https://localhost:7254/api/Customers/GetCustomer?id=" + id);
             if (responseMessage.IsSuccessStatusCode)
             {
                 var jsonData = await responseMessage.Content.ReadAsStringAsync();
-                var values = JsonConvert.DeserializeObject<UpdateCustomerDTO>(jsonData);
+                var values = JsonConvert.DeserializeObject<GetByIDCustomer>(jsonData);
                 return View(values);
+            }
+            return View();
+        }
+        [HttpPost]
+        public async Task<IActionResult> UpdateCustomer(UpdateCustomerDTO updateCustomerDTO)
+        {
+            var client = _httpClientFactory.CreateClient();
+            var jsonData = JsonConvert.SerializeObject(updateCustomerDTO);
+            StringContent stringContent = new StringContent(jsonData, Encoding.UTF8, "application/json");
+            var responseMessage = await client.PutAsync("https://localhost:7254/api/Customers", stringContent); //burada API'ye veri gönderiyoruz
+            if (responseMessage.IsSuccessStatusCode)
+            {
+                return RedirectToAction("CustomerList");
             }
             return View();
         }
